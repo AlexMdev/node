@@ -12,8 +12,8 @@ const realmIndex = Realm.createAllowCrossRealmAccess();
 const otherFunction = Realm.global(realmIndex).Function;
 Realm.detachGlobal(realmIndex);
 
-% PrepareFunctionForOptimization(f);
+%PrepareFunctionForOptimization(f);
 assertFalse(f(Function));
 assertThrows(_ => f(otherFunction));
-% OptimizeFunctionOnNextCall(f);
+%OptimizeFunctionOnNextCall(f);
 assertThrows(_ => f(otherFunction));
