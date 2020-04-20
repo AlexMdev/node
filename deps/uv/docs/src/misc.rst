@@ -651,7 +651,7 @@ API
 
     .. note::
         On IBM i PASE, the highest process priority is -10. The constant
-        `UV_PRIORITY_HIGHEST` is -10, `UV_PRIORITY_HIGH` is -7, 
+        `UV_PRIORITY_HIGHEST` is -10, `UV_PRIORITY_HIGH` is -7,
         `UV_PRIORITY_ABOVE_NORMAL` is -4, `UV_PRIORITY_NORMAL` is 0,
         `UV_PRIORITY_BELOW_NORMAL` is 15 and `UV_PRIORITY_LOW` is 39.
 
